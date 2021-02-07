@@ -848,6 +848,20 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
     transform: translateY(150%);
     transition: all .8s;
 }
+.item_action span {
+    display: inline-block;
+}
+.item_action span:last-child {
+    font-size: 25px;
+    display: inline-block;
+    transform: translateX(0);
+    transition: all .4s;
+    font-weight: bolder;
+}
+
+.item_action:hover span:last-child {
+    transform: translateX(20px);
+}
 .catalog_container-item:hover .item_action {
     transform: translateY(-200%);
 }
