@@ -289,12 +289,14 @@
             main.style.top = 'auto'
         }
     });
-    function hoverEmulate ()  {
-        this.querySelector('.catalog_container-item-back').classList.add('catalog_container-item-back-active')
-        this.querySelector('.item_text').classList.add('item_text-active')
+    function hoverEmulateAdd ()  {
+        this.querySelector('.catalog_container-item-back').classList.toggle('catalog_container-item-back-active')
+        this.querySelector('.item_text').classList.toggle('item_text-active')
     }
+
     catalogItem.forEach(item => {
-        item.addEventListener('touchstart', hoverEmulate)
+        item.addEventListener('touchstart', hoverEmulateAdd)
+        item.addEventListener('touchend', hoverEmulateAdd)
     })
 </script>
 
