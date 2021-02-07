@@ -822,6 +822,26 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
     background: blueviolet;
     flex: calc((100% - 4px) / 2) 0 1;
 }
+.item_text {
+    line-height: 25px;
+    font-weight: 300;
+    position: absolute;
+    padding: 10px;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background-color: rgb(40,161,220);
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all .4s;
+}
+.catalog_container-item:hover .item_text {
+    opacity: 0.9;
+    transform: translateX(0);
+}
+
+
 
 @media all and (max-width: 767px) {
     .catalog_container-item {
