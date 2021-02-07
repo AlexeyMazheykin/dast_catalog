@@ -840,7 +840,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
     opacity: 0;
     transition: all .4s;
 }
-.catalog_container-item:hover .item_text {
+.catalog_container-item:hover .item_text, .catalog_container-item:focus .item_text, .catalog_container-item:active .item_text {
     opacity: 0.9;
     transform: translateY(100%);
 }
