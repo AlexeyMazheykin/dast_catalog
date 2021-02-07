@@ -796,6 +796,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
     position: relative;
     color: white;
     overflow: hidden;
+    cursor: pointer;
 }
 .catalog_container-item::before {
     content: '';
@@ -808,7 +809,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
     opacity: .4;
     transition: all .3s;
 }
-.catalog_container-item:hover::before {
+.catalog_container-item:hover::before, .catalog_container-item:active::before, .catalog_container-item:focus::before {
     opacity: .1;
 }
 .item_title {
@@ -838,8 +839,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
     background-color: rgb(40,161,220);
     transform: translateY(200%);
     opacity: 0;
-    transition: all .4s;
-    cursor: pointer;
+    transition: all .4s
 }
 .catalog_container-item:hover .item_text, .catalog_container-item:focus .item_text, .catalog_container-item:active .item_text {
     opacity: 0.9;
