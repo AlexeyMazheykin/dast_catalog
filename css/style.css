@@ -789,9 +789,9 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
     object-fit: cover;
 }
 .catalog_container-item {
-    flex: calc((100% - 40px) / 3) 1 1 ;
+    flex: calc((100% - 34px) / 3) 1 1 ;
     height: 250px;
-    margin: 5px;
+    margin: 2px;
     background: aqua;
     position: relative;
     color: white;
@@ -816,22 +816,20 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
     top: 20px;
     left: 20px;
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 20px;
 }
 .catalog_container-item:first-child{
     background: blueviolet;
-    flex: calc((100% - 10px) / 2) 0 1;
+    flex: calc((100% - 4px) / 2) 0 1;
 }
-
-
 
 @media all and (max-width: 767px) {
     .catalog_container-item {
-        flex-basis: calc(100% - 10px)
+        flex-basis: calc(100% - 4px)
     }
     .catalog_container-item:first-child{
         background: blueviolet;
-        flex: calc((100% - 10px) / 2) 1 1;
+        flex: calc((100% - 4px) / 2) 1 1;
     }
 }
 
