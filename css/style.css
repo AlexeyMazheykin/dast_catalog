@@ -826,6 +826,9 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
     line-height: 25px;
     font-weight: 300;
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 10px;
     right: 0;
     top: 0;
@@ -840,6 +843,15 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
     opacity: 0.9;
     transform: translateX(0);
 }
+.item_action {
+    font-weight: 500;
+    transform: translateY(150%);
+    transition: all .8s;
+}
+.catalog_container-item:hover .item_action {
+    transform: translateY(-200%);
+}
+
 
 
 
