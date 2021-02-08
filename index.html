@@ -300,15 +300,16 @@
         })*/
         this.querySelector('.catalog_container-item-back').classList.add('catalog_container-item-back-active')
         this.querySelector('.item_text').classList.add('item_text-active')
-        console.log(e, this)
+        console.log(e.type, this)
     }
-    function removeClass () {
+    function removeClass (e) {
         itemText.forEach(item => {
             item.classList.remove('item_text-active')
         })
         itemBack.forEach(item => {
             item.classList.remove('catalog_container-item-back-active')
         })
+        console.log(e.type, this)
     }
 
     catalogItem.forEach(item => {
