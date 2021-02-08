@@ -300,7 +300,7 @@
         })*/
         this.querySelector('.catalog_container-item-back').classList.add('catalog_container-item-back-active')
         this.querySelector('.item_text').classList.add('item_text-active')
-        console.log(e.type, this)
+
     }
     function removeClass (e) {
         itemText.forEach(item => {
@@ -310,9 +310,12 @@
             item.classList.remove('catalog_container-item-back-active')
         })
         console.log(e.type, this)
+
     }
     function toggleClass (e) {
-        removeClass(e)
+        let bindRemoveClass = removeClass.bind(this)
+        bindRemoveClass (e)
+        console.log(this)
         this.querySelector('.catalog_container-item-back').classList.toggle('catalog_container-item-back-active')
         this.querySelector('.item_text').classList.toggle('item_text-active')
     }
