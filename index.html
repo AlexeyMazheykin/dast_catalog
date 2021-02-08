@@ -289,14 +289,14 @@
             main.style.top = 'auto'
         }
     });
-    function hoverEmulateAdd ()  {
+    function hoverEmulate ()  {
         this.querySelector('.catalog_container-item-back').classList.toggle('catalog_container-item-back-active')
         this.querySelector('.item_text').classList.toggle('item_text-active')
     }
 
     catalogItem.forEach(item => {
-        item.addEventListener('touchstart', hoverEmulateAdd)
-        item.addEventListener('touchend', hoverEmulateAdd)
+        item.addEventListener('mouseover', hoverEmulate)
+        item.addEventListener('mousedown', hoverEmulate)
     })
 </script>
 
