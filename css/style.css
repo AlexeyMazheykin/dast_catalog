@@ -820,7 +820,8 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
     opacity: .4;
     transition: all .3s;
 }*/
-.catalog_container-item:hover .catalog_container-item-back,  .catalog_container-item-back-active {
+/*.catalog_container-item:hover .catalog_container-item-back,  */
+.catalog_container-item-back-active {
     opacity: .1;
 }
 .item_title {
@@ -853,7 +854,8 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
     transition: transform .4s
 
 }
-.catalog_container-item:hover .item_text, .item_text-active {
+/*.catalog_container-item:hover .item_text, */
+.item_text-active {
     opacity: 0.9;
     transform: translateY(100%);
 }
