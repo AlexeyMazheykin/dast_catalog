@@ -311,7 +311,8 @@
         })
         console.log(e.type, this)
     }
-    function toggleClass () {
+    function toggleClass (e) {
+        removeClass(e)
         this.querySelector('.catalog_container-item-back').classList.toggle('catalog_container-item-back-active')
         this.querySelector('.item_text').classList.toggle('item_text-active')
     }
