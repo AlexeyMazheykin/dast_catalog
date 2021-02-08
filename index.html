@@ -292,19 +292,28 @@
         }
     });
     function hoverEmulate (e)  {
+/*        itemText.forEach(item => {
+            item.classList.remove('item_text-active')
+        })
+        itemBack.forEach(item => {
+            item.classList.remove('catalog_container-item-back-active')
+        })*/
+        this.querySelector('.catalog_container-item-back').classList.add('catalog_container-item-back-active')
+        this.querySelector('.item_text').classList.add('item_text-active')
+        console.log(e, this)
+    }
+    function removeClass () {
         itemText.forEach(item => {
             item.classList.remove('item_text-active')
         })
         itemBack.forEach(item => {
             item.classList.remove('catalog_container-item-back-active')
         })
-        this.querySelector('.catalog_container-item-back').classList.add('catalog_container-item-back-active')
-        this.querySelector('.item_text').classList.add('item_text-active')
-        console.log(e, this)
     }
 
     catalogItem.forEach(item => {
         item.addEventListener('mouseover', hoverEmulate)
+        item.addEventListener('mouseout', removeClass)
     })
 </script>
 

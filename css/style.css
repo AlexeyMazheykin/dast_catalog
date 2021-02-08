@@ -801,7 +801,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
 .catalog_container-item-back {
     content: '';
     position: absolute;
-    background: black;
+    background: #535353;
     top: 0;
     left: 0;
     width: 100%;
@@ -822,7 +822,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
 }*/
 /*.catalog_container-item:hover .catalog_container-item-back,  */
 .catalog_container-item-back-active {
-    opacity: .1;
+    opacity: .9;
 }
 .item_title {
     font-weight: 300;
@@ -851,7 +851,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
     background-color: rgb(40,161,220);
     transform: translateY(200%);
     opacity: 0;
-    transition: transform .4s
+    transition: all .4s
 
 }
 /*.catalog_container-item:hover .item_text, */
