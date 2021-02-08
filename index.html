@@ -313,10 +313,9 @@
     }
 
     catalogItem.forEach(item => {
-        item.addEventListener('mouseout', removeClass)
-        item.addEventListener('touchend', removeClass)
-        item.addEventListener('mouseover', hoverEmulate)
-        item.addEventListener('touchstart', hoverEmulate)
+        item.addEventListener('mouseleave', removeClass)
+        item.addEventListener('mouseenter', hoverEmulate)
+
     })
 </script>
 
