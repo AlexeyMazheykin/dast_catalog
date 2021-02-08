@@ -315,7 +315,6 @@
     function toggleClass (e) {
         let bindRemoveClass = removeClass.bind(this)
         bindRemoveClass (e)
-        console.log(this)
         this.querySelector('.catalog_container-item-back').classList.toggle('catalog_container-item-back-active')
         this.querySelector('.item_text').classList.toggle('item_text-active')
     }
