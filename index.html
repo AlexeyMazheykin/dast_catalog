@@ -291,7 +291,7 @@
             main.style.top = 'auto'
         }
     });
-    function hoverEmulate (e)  {
+    function addClass (e)  {
 /*        itemText.forEach(item => {
             item.classList.remove('item_text-active')
         })
@@ -311,12 +311,15 @@
         })
         console.log(e.type, this)
     }
+    function toggleClass () {
+        this.querySelector('.catalog_container-item-back').classList.toggle('catalog_container-item-back-active')
+        this.querySelector('.item_text').classList.toggle('item_text-active')
+    }
 
     catalogItem.forEach(item => {
         item.addEventListener('mouseleave', removeClass)
-        item.addEventListener('touchend', removeClass)
-        item.addEventListener('mouseenter', hoverEmulate)
-        item.addEventListener('touchstart', hoverEmulate)
+        item.addEventListener('mouseenter', addClass)
+        item.addEventListener('touchstart', toggleClass)
     })
 </script>
 
