@@ -95,7 +95,7 @@
 </header>
 <main id="main" class="main">
     <div class="wrapper">
-        <div class="catalog_container">
+        <div id="catalog_container" class="catalog_container">
             <div class="catalog_container-item">
                 <div class="catalog_container-item-back">
                 </div>
@@ -291,38 +291,26 @@
             main.style.top = 'auto'
         }
     });
-    function addClass (e)  {
-/*        itemText.forEach(item => {
-            item.classList.remove('item_text-active')
-        })
-        itemBack.forEach(item => {
-            item.classList.remove('catalog_container-item-back-active')
-        })*/
-        this.querySelector('.catalog_container-item-back').classList.add('catalog_container-item-back-active')
-        this.querySelector('.item_text').classList.add('item_text-active')
 
-    }
-    function removeClass (e) {
+    function removeClass () {
         itemText.forEach(item => {
             item.classList.remove('item_text-active')
         })
         itemBack.forEach(item => {
             item.classList.remove('catalog_container-item-back-active')
         })
-        console.log(e.type, this)
-
     }
-    function toggleClass (e) {
-        let bindRemoveClass = removeClass.bind(this)
-        bindRemoveClass (e)
+    function toggleClass () {
+        removeClass();
         this.querySelector('.catalog_container-item-back').classList.toggle('catalog_container-item-back-active')
         this.querySelector('.item_text').classList.toggle('item_text-active')
     }
-
     catalogItem.forEach(item => {
-        item.addEventListener('mouseleave', removeClass)
-        item.addEventListener('mouseenter', addClass)
+        item.addEventListener('mouseenter', toggleClass)
         item.addEventListener('touchstart', toggleClass)
+    })
+    document.getElementById('catalog_container').addEventListener("mouseleave",  () => {
+        removeClass();
     })
 </script>
 
