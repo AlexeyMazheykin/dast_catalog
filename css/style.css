@@ -851,26 +851,56 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
     background-color: rgb(40,161,220);
     transform: translateY(200%);
     opacity: 0;
-    transition: all .4s
-
+    transition: all .4s;
+    cursor: auto;
 }
 /*.catalog_container-item:hover .item_text, */
 .item_text-active {
     opacity: 0.9;
     transform: translateY(100%);
 }
+.item_text p {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.item_text span {
+    border-right: 2px solid #d2d2d2;
+    margin-bottom: 10px;
+    flex-basis: calc(100% / 3);
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+/*.item_text span::before {
+    position: absolute;
+    content: '';
+    width: 4px;
+    height: 4px;
+    top: calc(50% - 2px);
+    right: 0;
+    border-radius: 50%;
+    background-color: #dbdbdb;
+}*/
+
+
 
 
 .item_action {
-   font-weight: 500;
+    padding-left: 10px;
+    font-weight: 500;
+    width: 90%;
     background: url(../img/Shape.svg)  no-repeat 80% center;
-    transition: all .4s;
+    transition: all .8s;
 }
 .item_action:hover {
     background: url(../img/Shape.svg)  no-repeat right center;
 }
 
-
+footer {
+    position: relative;
+    top: 90px;
+}
 
 
 @media all and (max-width: 767px) {
