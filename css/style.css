@@ -796,7 +796,6 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
     position: relative;
     color: white;
     overflow: hidden;
-    cursor: pointer;
 }
 .catalog_container-item-back {
     content: '';
@@ -808,6 +807,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
     height: 100%;
     opacity: .4;
     transition: all .4s;
+
 }
 /*.catalog_container-item::before {
     content: '';
@@ -859,18 +859,18 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
     opacity: 0.9;
     transform: translateY(100%);
 }
-.item_text p {
+.item_text ul {
     width: 90%;
     display: flex;
     flex-wrap: wrap;
 }
-.item_text span {
+.item_text li {
     border-right: 2px solid #d2d2d2;
     margin-bottom: 10px;
-    flex-basis: calc(100% / 3);
+    width: calc(100% / 3);
     position: relative;
     text-align: center;
-    cursor: pointer;
+    font-size: 12px;
 }
 /*.item_text span::before {
     position: absolute;
@@ -882,9 +882,6 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
     border-radius: 50%;
     background-color: #dbdbdb;
 }*/
-
-
-
 
 .item_action {
     padding-left: 10px;
