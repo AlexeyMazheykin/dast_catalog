@@ -282,7 +282,7 @@
     }
     const handler = e => {
     removeClass()
-        console.log(e.target, document.querySelector('.catalog_container-item-back'));
+        console.log(e.target, document.querySelector('.catalog_container-item-back').classList.length);
         let elem = e.target.closest('.catalog_container-item')
         if (elem) addClass(elem);
         else removeClass();
